@@ -22,19 +22,19 @@ Bora Bora is a small South Pacific island northwest of Tahiti in French Polynesi
 
 ## Where to Stay
 
-@embed hotels {
-    output: "luxury-resorts",
-    tags: ("bora bora" AND luxury),
-    sort: price DESC,
-    view: interactive
-}
+<EmbedHotels 
+  output="luxury-resorts"
+  tags="(bora bora) AND luxury"
+  sort="price DESC"
+  view="interactive"
+/>
 
-@embed hotels {
-    output: "mid-range-options",
-    tags: ("bora bora" AND mid-range),
-    sort: price ASC,
-    view: interactive
-}
+<EmbedHotels 
+  output="mid-range-options"
+  tags="(bora bora) AND mid-range"
+  sort="price ASC"
+  view="interactive"
+/>
 
 ## Must-Do Activities
 1. Snorkeling or diving in the lagoon
